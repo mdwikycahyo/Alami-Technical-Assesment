@@ -1,7 +1,7 @@
 # Alami-Technical-Assesment
-Alami Technical Assessment - Front End Engineer
+## Alami Technical Assessment - Front End Engineer
 
-How to Deploy :
+### How to Deploy :
 
 + ...
 + ...
