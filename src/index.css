@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Navbar {
+  width: 100%;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.top-navbar-left {
+  margin-left: 20%;
+}
+
+.custom-shape-divider-bottom-1650870126 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650870126 svg {
+  position: relative;
+  display: block;
+  width: calc(159% + 1.3px);
+  height: 138px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1650870126 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.card-x {
+  height: 14em;
+  text-align: left;
+}
+
+.card-x i {
+  font-size: 3em;
+}
+
+.card-x h5 {
+  color: #F77B81
+}
+
+.hamburgerButton, .sidebarResponsive {
+  /* background-color: transparent; */
+  /* border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px; */
+  display: none;
+}
+
+@media (max-width: 800px) {
+  input {
+    display: none;
+  }
+  .top-navbar-left {
+    display: none;
+  }
+  ul {
+    /* float: right; */
+    justify-content: flex-end;
+  }
+  .hamburgerButton, .sidebarResponsive {
+    display: inline;
+  }
+  .sideButtons {
+    display: none;
+  }
+}
