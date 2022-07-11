@@ -1,161 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 function App() {
-  const [showSideBar, setShowSideBar] = useState(false);
-
-  const SideBar = () => {
-    return (
-      <div
-        className="d-flex flex-column sidebarResponsive"
-        style={{
-          position: "fixed",
-          right: "0%",
-          top: "8%",
-          backgroundColor: "whitesmoke",
-          zIndex: 1
-        }}
-      >
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-chat-left" />
-        </button>
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-bullseye" />
-        </button>
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-file-earmark-bar-graph" />
-        </button>
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-camera-video" />
-        </button>
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-people" />
-        </button>
-        <button className="btn btn-light sidebarResponsive" type="button">
-          <i className="bi bi-cart" />
-        </button>
-      </div>
-    );
-  };
-
   return (
     <div className="App">
-      {/* Navbar */}
-      <div className="Navbar">
-        <ul className="pt-1 pb-1">
-          <div className="top-navbar-left">
-            <li>
-              <a href="#demos">
-                Demos <i className="bi bi-chevron-down" />
-              </a>
-            </li>
-            <li>
-              <a href="#pages">
-                Pages <i className="bi bi-chevron-down" />
-              </a>
-            </li>
-            <li>
-              <a href="#portofolio">
-                Portofolio <i className="bi bi-chevron-down" />
-              </a>
-            </li>
-          </div>
-          <div className="top-navbar-right d-flex justify-content-end">
-            <div className="right-navbar">
-              <button className="btn btn-light m-2">
-                <i className="bi bi-cart" />
-              </button>
-              <button className="btn btn-light m-2">
-                <i className="bi bi-search" />
-              </button>
-              <button
-                className="hamburgerButton btn btn-light"
-                onClick={() => setShowSideBar(!showSideBar)}
-              >
-                <i className="bi bi-list" />
-              </button>
-            </div>
-            <input type="text" className="w-10 m-2 p-1" />
-          </div>
-        </ul>
-      </div>
-      {/* Responsive Sidebar */}
-      {showSideBar && <SideBar />}
-      {/* Sidebar */}
-      <div
-        className="d-flex flex-column sideButtons"
-        style={{
-          position: "fixed",
-          right: "0%",
-          top: "30%",
-          backgroundColor: "whitesmoke",
-          zIndex: 1
-        }}
-      >
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-chat-left" />
-        </button>
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-bullseye" />
-        </button>
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-file-earmark-bar-graph" />
-        </button>
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-camera-video" />
-        </button>
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-people" />
-        </button>
-        <button className="btn btn-light sideButtons" type="button">
-          <i className="bi bi-cart" />
-        </button>
-      </div>
       {/* ==== Background Image ===== */}
       <div
         style={{
-          height: "98vh",
-          backgroundImage: `url("${require("./kitchenTable.jpeg")}")`,
+          height: "100vh",
+          backgroundImage: `url("${require("./under-construction.jpeg")}")`,
           backgroundSize: "cover",
           paddingTop: "90px",
         }}
       >
-        <h1 style={{ color: "white", fontFamily: "Ms Madi, cursive" }}>
-          Catering should be an experience
-        </h1>
         <h1
           style={{
-            color: "white",
-            fontFamily: "Nunito, sans-serif",
-            fontWeight: "bold",
+            color: "black",
             fontSize: "50px",
-            width: "50%",
-            margin: "0.5em auto",
+            fontFamily: "Ms Madi, cursive",
+            margin: '15% auto'
           }}
         >
-          We use only the finest and freshest ingredients
+          Under Construction Portofolio Page
         </h1>
-        <p
-          style={{
-            color: "white",
-            width: "35%",
-            margin: "auto",
-            fontWeight: 600,
-          }}
-        >
-          At Sway catering we know that food is an important part of life. If
-          the meal is not perfect, your event cannot be perfect.
-        </p>
-        <button
-          type="button"
-          className="btn rounded-pill mt-5"
-          style={{ backgroundColor: "#41D55F", color: "white" }}
-        >
-          Request a Quote <i className="bi bi-chevron-right" />
-        </button>
       </div>
       {/* Devider */}
-      <div className="custom-shape-divider-bottom-1650870126 mb-2">
+      <div className="custom-shape-divider-bottom-1650870126">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -177,116 +47,6 @@ function App() {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
-      {/* Mid Section */}
-      <div style={{ marginTop: "10em" }}>
-        <h1 style={{ color: "gray", fontFamily: "Ms Madi, cursive" }}>
-          Catering services in New York
-        </h1>
-        <h1 style={{ color: "gray" }}>
-          We specialize in corporate and private events
-        </h1>
-        <p style={{ color: "gray", width: "50%", margin: "auto" }}>
-          With 20 years of experience, we promise you the finest, local
-          ingredients, hand-crafted cooking sprinkled with our unique whimsical
-          elegance and exceptional service.
-        </p>
-        <div
-          style={{
-            backgroundColor: "gray",
-            height: "10px",
-            marginTop: "10px",
-            marginBottom: "1em",
-          }}
-        />
-      </div>
-      {/* Bottom Section */}
-      <div className="row" style={{ color: "white", height: "65vh" }}>
-        <div
-          className="col-3 d-flex align-items-center justify-content-center"
-          style={{ backgroundColor: "#404040", fontSize: "1.5em" }}
-        >
-          My Portofolio
-        </div>
-        <div className="col-5 d-flex" style={{ backgroundColor: "#302729" }}>
-          <div className="row">
-            <div className="col-sm-6">
-              <div className="card card-x" style={{ backgroundColor: "#36292e" }}>
-                <div className="card-body">
-                  <i className="bi bi-box" />
-                  <h5 className="card-title">Design</h5>
-                  <p className="card-text">
-                    A full stack alaround designer that may or may not include a
-                    guide for specific crative people
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card card-x" style={{ backgroundColor: "#36292e" }}>
-                <div className="card-body">
-                  <i className="bi bi-file-earmark-code" />
-                  <h5 className="card-title">Develop</h5>
-                  <p className="card-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card card-x" style={{ backgroundColor: "#36292e" }}>
-                <div className="card-body">
-                  <i className="bi bi-pen" />
-                  <h5 className="card-title">Write</h5>
-                  <p className="card-text">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card card-x" style={{ backgroundColor: "#36292e" }}>
-                <div className="card-body">
-                  <i className="bi bi-hand-thumbs-up" />
-                  <h5 className="card-title">Promote</h5>
-                  <p className="card-text">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non numquam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-4 p-3"
-          style={{ backgroundColor: "#302729", textAlign: "left" }}
-        >
-          <h3 style={{ color: "#F77B81" }}>Services</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <button
-            className="btn rounded-pill"
-            style={{ color: "white", borderColor: "#F77B81" }}
-          >
-            Download CV <i className="bi bi-chevron-right" />
-          </button>
-          <button
-            className="btn rounded-pill m-3"
-            style={{ color: "white", borderColor: "#F77B81" }}
-          >
-            Check My Portofolio <i className="bi bi-chevron-right" />
-          </button>
-        </div>
       </div>
     </div>
   );
