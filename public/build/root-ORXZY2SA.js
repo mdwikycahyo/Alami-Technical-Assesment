@@ -149,7 +149,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Home.jsx"
   );
-  import.meta.hot.lastModified = "1700374700214.203";
+  import.meta.hot.lastModified = "1700377582298.9326";
 }
 var Home = (props) => {
   const {
@@ -173,17 +173,17 @@ var Home = (props) => {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "mt-4", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-linkedin text-3xl" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-linkedin text-3xl hover:text-4xl duration-300 cursor-pointer", onClick: () => window.open(data.linkedin, "_blank") }, void 0, false, {
         fileName: "app/components/Home.jsx",
         lineNumber: 33,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-github text-3xl mx-5" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-github text-3xl hover:text-4xl duration-300 cursor-pointer mx-5", onClick: () => window.open(data.github, "_blank") }, void 0, false, {
         fileName: "app/components/Home.jsx",
         lineNumber: 34,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-medium text-3xl" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("i", { className: "bi bi-medium text-3xl hover:text-4xl duration-300 cursor-pointer", onClick: () => window.open(data.medium, "_blank") }, void 0, false, {
         fileName: "app/components/Home.jsx",
         lineNumber: 35,
         columnNumber: 9
@@ -225,7 +225,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Project.jsx"
   );
-  import.meta.hot.lastModified = "1700279951880.1692";
+  import.meta.hot.lastModified = "1700378218736.6228";
 }
 var Project = (props) => {
   const {
@@ -279,20 +279,22 @@ var Project = (props) => {
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", onClick: () => {
+      window.open(project.url, "_blank");
+    }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "View Details" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 46,
+        lineNumber: 48,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("i", { className: "bi bi-arrow-right text-yellow-500 text-3xl" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 47,
+        lineNumber: 49,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
@@ -336,7 +338,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Article.jsx"
   );
-  import.meta.hot.lastModified = "1700282433106.6604";
+  import.meta.hot.lastModified = "1700378247467.7869";
 }
 var Article = (props) => {
   const {
@@ -385,20 +387,22 @@ var Article = (props) => {
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", onClick: () => {
+      window.open(article.url, "_blank");
+    }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" }, void 0, false, {
         fileName: "app/components/Article.jsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "Read More" }, void 0, false, {
         fileName: "app/components/Article.jsx",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("i", { className: "bi bi-arrow-right text-yellow-500 text-3xl" }, void 0, false, {
         fileName: "app/components/Article.jsx",
-        lineNumber: 46,
+        lineNumber: 48,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
@@ -442,7 +446,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Contact.jsx"
   );
-  import.meta.hot.lastModified = "1700281921569.5784";
+  import.meta.hot.lastModified = "1700377966402.061";
 }
 var Contact = (props) => {
   const {
@@ -458,79 +462,89 @@ var Contact = (props) => {
       __html: data.closingStatement
     } }, void 0, false, {
       fileName: "app/components/Contact.jsx",
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center mb-14", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center mb-14", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", onClick: () => {
+      const emailAddress = data.email;
+      const subject = "Hello";
+      const body = "I hope this email finds you well.";
+      window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "bg-[#363636] rounded-full w-[50px] h-[50px]" }, void 0, false, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 32,
+        lineNumber: 39,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "Say Hello!" }, void 0, false, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 33,
+        lineNumber: 40,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-arrow-right text-yellow-500 text-3xl" }, void 0, false, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 34,
+        lineNumber: 41,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Contact.jsx",
-      lineNumber: 31,
+      lineNumber: 33,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/components/Contact.jsx",
-      lineNumber: 30,
+      lineNumber: 32,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "mt-4 flex items-center my-5", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "\xA9 2023 Muhammad Dwiky Cahyo Wicaksono" }, void 0, false, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 38,
+        lineNumber: 45,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "mx-20", children: "|" }, void 0, false, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 39,
+        lineNumber: 46,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-linkedin text-3xl mr-5" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-linkedin text-3xl hover:text-4xl duration-300 cursor-pointer mr-5", onClick: () => window.open(data.linkedin, "_blank") }, void 0, false, {
           fileName: "app/components/Contact.jsx",
-          lineNumber: 41,
+          lineNumber: 48,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-github text-3xl mx-5" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-github text-3xl hover:text-4xl duration-300 cursor-pointer mx-5", onClick: () => window.open(data.github, "_blank") }, void 0, false, {
           fileName: "app/components/Contact.jsx",
-          lineNumber: 42,
+          lineNumber: 49,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-instagram text-3xl mx-5" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-instagram text-3xl hover:text-4xl duration-300 cursor-pointer mx-5", onClick: () => window.open(data.instagram, "_blank") }, void 0, false, {
           fileName: "app/components/Contact.jsx",
-          lineNumber: 43,
+          lineNumber: 50,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-medium text-3xl mx-5" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-medium text-3xl hover:text-4xl duration-300 cursor-pointer mx-5", onClick: () => window.open(data.medium, "_blank") }, void 0, false, {
           fileName: "app/components/Contact.jsx",
-          lineNumber: 44,
+          lineNumber: 51,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-envelope-fill text-3xl mx-5" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("i", { className: "bi bi-envelope-fill text-3xl hover:text-4xl duration-300 cursor-pointer mx-5", onClick: () => {
+          const emailAddress = data.email;
+          const subject = "Hello";
+          const body = "I hope this email finds you well.";
+          window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } }, void 0, false, {
           fileName: "app/components/Contact.jsx",
-          lineNumber: 45,
+          lineNumber: 52,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Contact.jsx",
-        lineNumber: 40,
+        lineNumber: 47,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Contact.jsx",
-      lineNumber: 37,
+      lineNumber: 44,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -561,19 +575,22 @@ var data_default = {
       name: "WhatsApp Chatbot",
       year: 2023,
       description: "This chatbot helps merchants easily top up their account balance using WhatsApp. They can use the balance to assist users in paying electricity bills, fiber optic bills, and other household transactions. The chatbot automatically responds to WhatsApp messages, making it convenient for merchants without the need for a separate app.",
-      techStacks: "NodeJs, DigitalOcean, Whatsapp Webhook"
+      techStacks: "NodeJs, DigitalOcean, Whatsapp Webhook",
+      url: ""
     },
     {
       name: "Amazon Clone",
       year: 2021,
       description: "Using Fake Store 3rd Party API to clone Amazon.com e-commerce web",
-      techStacks: "React, Redux, Firebase"
+      techStacks: "React, Redux, Firebase",
+      url: "https://clone-58f35.web.app/"
     },
     {
       name: "GeeHive",
       year: 2021,
       description: "Gift recommendation app based on user input",
-      techStacks: "Vue.js, Vuex, Express, PosgreSQL, Firebase, Heroku"
+      techStacks: "Vue.js, Vuex, Express, PosgreSQL, Firebase, Heroku",
+      url: "https://geehive.web.app/"
     }
   ],
   articles: [
@@ -803,4 +820,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   App as default
 };
-//# sourceMappingURL=/build/root-K2XMI42E.js.map
+//# sourceMappingURL=/build/root-ORXZY2SA.js.map

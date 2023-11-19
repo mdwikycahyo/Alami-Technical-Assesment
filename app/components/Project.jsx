@@ -20,7 +20,12 @@ const Project = (props) => {
         </div>
       </div>
       <div className="w-1/4 flex items-center justify-center">
-        <div className="flex items-center justify-center cursor-pointer hover:font-bold">
+        <div
+          className="flex items-center justify-center cursor-pointer hover:font-bold"
+          onClick={() => {
+            window.open(project.url, "_blank");
+          }}
+        >
           <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
           <p className="-ml-[25px] mr-2 font-mono">View Details</p>
           <i className="bi bi-arrow-right text-yellow-500 text-3xl" />

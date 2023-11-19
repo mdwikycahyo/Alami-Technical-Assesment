@@ -10,9 +10,18 @@ const Home = (props) => {
         dangerouslySetInnerHTML={{ __html: data.summary }}
       />
       <div className="mt-4">
-        <i className="bi bi-linkedin text-3xl" />
-        <i className="bi bi-github text-3xl mx-5" />
-        <i className="bi bi-medium text-3xl" />
+        <i
+          className="bi bi-linkedin text-3xl hover:text-4xl duration-300 cursor-pointer"
+          onClick={() => window.open(data.linkedin, "_blank")}
+        />
+        <i
+          className="bi bi-github text-3xl hover:text-4xl duration-300 cursor-pointer mx-5"
+          onClick={() => window.open(data.github, "_blank")}
+        />
+        <i
+          className="bi bi-medium text-3xl hover:text-4xl duration-300 cursor-pointer"
+          onClick={() => window.open(data.medium, "_blank")}
+        />
       </div>
     </div>
   );

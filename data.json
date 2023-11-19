@@ -12,19 +12,22 @@
       "name": "WhatsApp Chatbot",
       "year": 2023,
       "description": "This chatbot helps merchants easily top up their account balance using WhatsApp. They can use the balance to assist users in paying electricity bills, fiber optic bills, and other household transactions. The chatbot automatically responds to WhatsApp messages, making it convenient for merchants without the need for a separate app.",
-      "techStacks": "NodeJs, DigitalOcean, Whatsapp Webhook"
+      "techStacks": "NodeJs, DigitalOcean, Whatsapp Webhook",
+      "url": ""
     },
     {
       "name": "Amazon Clone",
       "year": 2021,
       "description": "Using Fake Store 3rd Party API to clone Amazon.com e-commerce web",
-      "techStacks": "React, Redux, Firebase"
+      "techStacks": "React, Redux, Firebase",
+      "url": "https://clone-58f35.web.app/"
     },
     {
       "name": "GeeHive",
       "year": 2021,
       "description": "Gift recommendation app based on user input",
-      "techStacks": "Vue.js, Vuex, Express, PosgreSQL, Firebase, Heroku"
+      "techStacks": "Vue.js, Vuex, Express, PosgreSQL, Firebase, Heroku",
+      "url": "https://geehive.web.app/"
     }
   ],
   "articles": [
