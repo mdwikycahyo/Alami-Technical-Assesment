@@ -19,8 +19,10 @@ import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
-// app/components/Navbar.jsx
+// app/root.jsx
 var import_react = __toESM(require_react(), 1);
+
+// app/components/Navbar.jsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   console.warn("remix:hmr: React Fast Refresh only works when the Remix compiler is running in development mode.");
@@ -34,19 +36,20 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
 }
 var prevRefreshReg;
 var prevRefreshSig;
-var _s = $RefreshSig$();
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
     "app/components/Navbar.jsx"
   );
-  import.meta.hot.lastModified = "1700368901797.9583";
+  import.meta.hot.lastModified = "1700376965955.043";
 }
-var Navbar = () => {
-  _s();
-  const [selectedNav, setSelectedNav] = (0, import_react.useState)("home");
+var Navbar = (props) => {
+  const {
+    selectedNav,
+    onChangeNav
+  } = props;
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("nav", { id: "navbar", className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", { className: "flex space-x-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "#home", onClick: () => setSelectedNav("home"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "home" ? "font-bold" : "hover:font-bold"} duration-300`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { onClick: () => onChangeNav("home"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "home" ? "font-bold" : "hover:font-bold"} duration-300 cursor-pointer`, children: [
       "HOME",
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: `absolute inset-x-0 bottom-0 h-1 bg-transparent border-b-2 ${selectedNav === "home" ? "border-yellow-500" : "group-hover:border-yellow-500"} group-hover:border-yellow-500 transition-all duration-300` }, void 0, false, {
         fileName: "app/components/Navbar.jsx",
@@ -62,7 +65,7 @@ var Navbar = () => {
       lineNumber: 28,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "#projects", onClick: () => setSelectedNav("projects"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "projects" ? "font-bold" : "hover:font-bold"}  duration-300`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { onClick: () => onChangeNav("projects"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "projects" ? "font-bold" : "hover:font-bold"}  duration-300 cursor-pointer`, children: [
       "PROJECTS",
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: `absolute inset-x-0 bottom-0 h-1 bg-transparent border-b-2 ${selectedNav === "projects" ? "border-yellow-500" : "group-hover:border-yellow-500"}  transition-all duration-300` }, void 0, false, {
         fileName: "app/components/Navbar.jsx",
@@ -78,7 +81,7 @@ var Navbar = () => {
       lineNumber: 34,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "#articles", onClick: () => setSelectedNav("articles"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "articles" ? "font-bold" : "hover:font-bold"}  duration-300`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { onClick: () => onChangeNav("articles"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "articles" ? "font-bold" : "hover:font-bold"}  duration-300 cursor-pointer`, children: [
       "ARTICLES",
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: `absolute inset-x-0 bottom-0 h-1 bg-transparent border-b-2 ${selectedNav === "articles" ? "border-yellow-500" : "group-hover:border-yellow-500"}  transition-all duration-300` }, void 0, false, {
         fileName: "app/components/Navbar.jsx",
@@ -94,7 +97,7 @@ var Navbar = () => {
       lineNumber: 40,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", { href: "#contact", onClick: () => setSelectedNav("contact"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "contact" ? "font-bold" : "hover:font-bold"}  duration-300`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { onClick: () => onChangeNav("contact"), className: `font-roboto mx-8 text-2xl relative group ${selectedNav === "contact" ? "font-bold" : "hover:font-bold"}  duration-300 cursor-pointer`, children: [
       "CONTACT",
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: `absolute inset-x-0 bottom-0 h-1 bg-transparent border-b-2 ${selectedNav === "contact" ? "border-yellow-500" : "group-hover:border-yellow-500"}  transition-all duration-300` }, void 0, false, {
         fileName: "app/components/Navbar.jsx",
@@ -120,7 +123,6 @@ var Navbar = () => {
     columnNumber: 10
   }, this);
 };
-_s(Navbar, "6joxxgiPO8riGpPdCRpZCYbfzXg=");
 _c = Navbar;
 var Navbar_default = Navbar;
 var _c;
@@ -147,13 +149,13 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Home.jsx"
   );
-  import.meta.hot.lastModified = "1700370765729.5876";
+  import.meta.hot.lastModified = "1700374700214.203";
 }
 var Home = (props) => {
   const {
     data
   } = props;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_jsx_dev_runtime2.Fragment, { children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("h1", { className: "text-6xl font-bold leading-normal font-mono", children: [
       "Hi, I'm ",
       data.username,
@@ -611,6 +613,7 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
 }
 var prevRefreshReg;
 var prevRefreshSig;
+var _s = $RefreshSig$();
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
@@ -618,126 +621,180 @@ if (import.meta) {
   );
 }
 function App() {
+  _s();
+  const [selectedNav, setSelectedNav] = (0, import_react.useState)("home");
+  const homeRef = (0, import_react.useRef)(null);
+  const projectsRef = (0, import_react.useRef)(null);
+  const articlesRef = (0, import_react.useRef)(null);
+  const contactRef = (0, import_react.useRef)(null);
+  const onChangeNav = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+  (0, import_react.useEffect)(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5
+    };
+    const callback = (entries, observer2) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSelectedNav(entry.target.id);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback, options);
+    if (homeRef.current) {
+      observer.observe(homeRef.current);
+    }
+    if (projectsRef.current) {
+      observer.observe(projectsRef.current);
+    }
+    if (articlesRef.current) {
+      observer.observe(articlesRef.current);
+    }
+    if (contactRef.current) {
+      observer.observe(contactRef.current);
+    }
+    return () => {
+      if (homeRef.current) {
+        observer.unobserve(homeRef.current);
+      }
+      if (projectsRef.current) {
+        observer.unobserve(projectsRef.current);
+      }
+      if (articlesRef.current) {
+        observer.unobserve(articlesRef.current);
+      }
+      if (contactRef.current) {
+        observer.unobserve(contactRef.current);
+      }
+    };
+  }, [selectedNav]);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("html", { className: "scroll-smooth", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("title", { children: "Muhammad Dwiky Cahyo Wicaksono Personal Website" }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 30,
+        lineNumber: 90,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "icon", href: "data:image/x-icon;base64,AA" }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 31,
+        lineNumber: 91,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 32,
+        lineNumber: 92,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 34,
+        lineNumber: 94,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("script", { src: "https://cdn.tailwindcss.com" }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 36,
+        lineNumber: 96,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Meta, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 37,
+        lineNumber: 97,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Links, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 38,
+        lineNumber: 98,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.jsx",
-      lineNumber: 29,
+      lineNumber: 89,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("body", { className: "flex flex-col h-screen relative overflow-y-auto", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "p-7 sticky top-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Navbar_default, {}, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "p-7 sticky top-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Navbar_default, { selectedNav, onChangeNav }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 55,
+        lineNumber: 115,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 54,
+        lineNumber: 114,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "container", className: "flex-1 overflow-y-auto", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "home", className: "ml-36 w-3/4 my-44 mb-56", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Home_default, { data: data_default }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: homeRef, id: "home", className: "ml-36 w-3/4 h-full flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Home_default, { data: data_default }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 59,
+          lineNumber: 120,
           columnNumber: 13
         }, this) }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 58,
+          lineNumber: 118,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "projects", className: "my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Project_default, { data: data_default }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: projectsRef, id: "projects", className: "my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Project_default, { data: data_default }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 62,
+          lineNumber: 123,
           columnNumber: 13
         }, this) }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 61,
+          lineNumber: 122,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "articles", className: "my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Article_default, { data: data_default }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: articlesRef, id: "articles", className: "my-20 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Article_default, { data: data_default }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 65,
+          lineNumber: 126,
           columnNumber: 13
         }, this) }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 64,
+          lineNumber: 125,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "contact", className: "mt-20 bg-black text-white item-center flex flex-col items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Contact_default, { data: data_default }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: contactRef, id: "contact", className: "mt-20 bg-black text-white item-center flex flex-col items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Contact_default, { data: data_default }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 69,
+          lineNumber: 130,
           columnNumber: 13
         }, this) }, void 0, false, {
           fileName: "app/root.jsx",
-          lineNumber: 67,
+          lineNumber: 128,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/root.jsx",
-        lineNumber: 57,
+        lineNumber: 117,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Outlet, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 72,
+        lineNumber: 133,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Scripts, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 73,
+        lineNumber: 134,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(LiveReload, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 74,
+        lineNumber: 135,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.jsx",
-      lineNumber: 40,
+      lineNumber: 100,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/root.jsx",
-    lineNumber: 28,
+    lineNumber: 88,
     columnNumber: 10
   }, this);
 }
+_s(App, "VnAhIHIGk7FZ75CLMVt+/EZZXt4=");
 _c6 = App;
 var _c6;
 $RefreshReg$(_c6, "App");
@@ -746,4 +803,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   App as default
 };
-//# sourceMappingURL=/build/root-USFIF5XM.js.map
+//# sourceMappingURL=/build/root-K2XMI42E.js.map

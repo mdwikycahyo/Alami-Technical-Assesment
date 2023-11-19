@@ -1,17 +1,14 @@
-import { useState } from "react";
-
-const Navbar = () => {
-  const [selectedNav, setSelectedNav] = useState("home");
+const Navbar = (props) => {
+  const { selectedNav, onChangeNav } = props;
   return (
     <nav id="navbar" className="flex justify-end">
       <ul className="flex space-x-2">
         <li>
-          <a
-            href="#home"
-            onClick={() => setSelectedNav("home")}
+          <div
+            onClick={() => onChangeNav("home")}
             className={`font-roboto mx-8 text-2xl relative group ${
               selectedNav === "home" ? "font-bold" : "hover:font-bold"
-            } duration-300`}
+            } duration-300 cursor-pointer`}
           >
             HOME
             <span
@@ -21,15 +18,14 @@ const Navbar = () => {
                   : "group-hover:border-yellow-500"
               } group-hover:border-yellow-500 transition-all duration-300`}
             ></span>
-          </a>
+          </div>
         </li>
         <li>
-          <a
-            href="#projects"
-            onClick={() => setSelectedNav("projects")}
+          <div
+            onClick={() => onChangeNav("projects")}
             className={`font-roboto mx-8 text-2xl relative group ${
               selectedNav === "projects" ? "font-bold" : "hover:font-bold"
-            }  duration-300`}
+            }  duration-300 cursor-pointer`}
           >
             PROJECTS
             <span
@@ -39,15 +35,14 @@ const Navbar = () => {
                   : "group-hover:border-yellow-500"
               }  transition-all duration-300`}
             ></span>
-          </a>
+          </div>
         </li>
         <li>
-          <a
-            href="#articles"
-            onClick={() => setSelectedNav("articles")}
+          <div
+            onClick={() => onChangeNav("articles")}
             className={`font-roboto mx-8 text-2xl relative group ${
               selectedNav === "articles" ? "font-bold" : "hover:font-bold"
-            }  duration-300`}
+            }  duration-300 cursor-pointer`}
           >
             ARTICLES
             <span
@@ -57,15 +52,14 @@ const Navbar = () => {
                   : "group-hover:border-yellow-500"
               }  transition-all duration-300`}
             ></span>
-          </a>
+          </div>
         </li>
         <li>
-          <a
-            href="#contact"
-            onClick={() => setSelectedNav("contact")}
+          <div
+            onClick={() => onChangeNav("contact")}
             className={`font-roboto mx-8 text-2xl relative group ${
               selectedNav === "contact" ? "font-bold" : "hover:font-bold"
-            }  duration-300`}
+            }  duration-300 cursor-pointer`}
           >
             CONTACT
             <span
@@ -75,7 +69,7 @@ const Navbar = () => {
                   : "group-hover:border-yellow-500"
               }  transition-all duration-300`}
             ></span>
-          </a>
+          </div>
         </li>
       </ul>
     </nav>

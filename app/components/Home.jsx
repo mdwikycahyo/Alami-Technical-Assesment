@@ -1,7 +1,7 @@
 const Home = (props) => {
   const { data } = props;
   return (
-    <>
+    <div>
       <h1 className="text-6xl font-bold leading-normal font-mono">
         Hi, I'm {data.username}!
       </h1>
@@ -14,7 +14,7 @@ const Home = (props) => {
         <i className="bi bi-github text-3xl mx-5" />
         <i className="bi bi-medium text-3xl" />
       </div>
-    </>
+    </div>
   );
 };
 
