@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 const Project = (props) => {
   const { data } = props;
   return data.projects.map((project, index) => (
@@ -20,16 +22,27 @@ const Project = (props) => {
         </div>
       </div>
       <div className="w-1/4 flex items-center justify-center">
-        <div
-          className="flex items-center justify-center cursor-pointer hover:font-bold"
-          onClick={() => {
-            window.open(project.url, "_blank");
-          }}
-        >
-          <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
-          <p className="-ml-[25px] mr-2 font-mono">View Details</p>
-          <i className="bi bi-arrow-right text-yellow-500 text-3xl" />
-        </div>
+        {project.name === "WhatsApp Chatbot" ? (
+          <Link
+            className="flex items-center justify-center cursor-pointer hover:font-bold"
+            to={"/project/wa-chatbot"}
+          >
+            <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
+            <p className="-ml-[25px] mr-2 font-mono">View Details</p>
+            <i className="bi bi-arrow-right text-yellow-500 text-3xl" />
+          </Link>
+        ) : (
+          <div
+            className="flex items-center justify-center cursor-pointer hover:font-bold"
+            onClick={() => {
+              window.open(project.url, "_blank");
+            }}
+          >
+            <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
+            <p className="-ml-[25px] mr-2 font-mono">Visit Website</p>
+            <i className="bi bi-arrow-right text-yellow-500 text-3xl" />
+          </div>
+        )}
       </div>
     </div>
   ));

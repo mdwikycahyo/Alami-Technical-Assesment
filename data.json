@@ -13,7 +13,7 @@
       "year": 2023,
       "description": "This chatbot helps merchants easily top up their account balance using WhatsApp. They can use the balance to assist users in paying electricity bills, fiber optic bills, and other household transactions. The chatbot automatically responds to WhatsApp messages, making it convenient for merchants without the need for a separate app.",
       "techStacks": "NodeJs, DigitalOcean, Whatsapp Webhook",
-      "url": ""
+      "url": "/project/wa-chatbot"
     },
     {
       "name": "Amazon Clone",

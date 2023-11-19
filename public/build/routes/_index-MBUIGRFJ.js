@@ -1,13 +1,9 @@
 import {
+  Link
+} from "/build/_shared/chunk-64UX4JBJ.js";
+import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts
-} from "/build/_shared/chunk-64UX4JBJ.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-X6MWOLIK.js";
@@ -19,8 +15,8 @@ import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
-// app/root.jsx
-var import_react = __toESM(require_react(), 1);
+// app/routes/_index.jsx
+var import_react2 = __toESM(require_react(), 1);
 
 // app/components/Navbar.jsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
@@ -225,7 +221,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Project.jsx"
   );
-  import.meta.hot.lastModified = "1700378218736.6228";
+  import.meta.hot.lastModified = "1700386121832.5579";
 }
 var Project = (props) => {
   const {
@@ -236,79 +232,99 @@ var Project = (props) => {
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-36 h-0.5 bg-black" }, void 0, false, {
           fileName: "app/components/Project.jsx",
-          lineNumber: 28,
+          lineNumber: 29,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { className: "text-xl mx-6 font-mono", children: project.year }, void 0, false, {
           fileName: "app/components/Project.jsx",
-          lineNumber: 29,
+          lineNumber: 30,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { className: "text-3xl font-bold font-mono", children: project.name }, void 0, false, {
           fileName: "app/components/Project.jsx",
-          lineNumber: 30,
+          lineNumber: 31,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex justify-between", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "ml-60", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "leading-10 font-[Helvetica Neue] font-normal antialiased text-xl", children: project.description }, void 0, false, {
           fileName: "app/components/Project.jsx",
-          lineNumber: 34,
+          lineNumber: 35,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "leading-10 text-lg font-extralight", children: project.techStacks }, void 0, false, {
           fileName: "app/components/Project.jsx",
-          lineNumber: 37,
+          lineNumber: 38,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Project.jsx",
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", onClick: () => {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "w-1/4 flex items-center justify-center", children: project.name === "WhatsApp Chatbot" ? /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Link, { className: "flex items-center justify-center cursor-pointer hover:font-bold", to: "/project/wa-chatbot", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" }, void 0, false, {
+        fileName: "app/components/Project.jsx",
+        lineNumber: 46,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "View Details" }, void 0, false, {
+        fileName: "app/components/Project.jsx",
+        lineNumber: 47,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("i", { className: "bi bi-arrow-right text-yellow-500 text-3xl" }, void 0, false, {
+        fileName: "app/components/Project.jsx",
+        lineNumber: 48,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "app/components/Project.jsx",
+      lineNumber: 45,
+      columnNumber: 48
+    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-center cursor-pointer hover:font-bold", onClick: () => {
       window.open(project.url, "_blank");
     }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 47,
-        columnNumber: 11
+        lineNumber: 52,
+        columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "View Details" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { className: "-ml-[25px] mr-2 font-mono", children: "Visit Website" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 48,
-        columnNumber: 11
+        lineNumber: 53,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("i", { className: "bi bi-arrow-right text-yellow-500 text-3xl" }, void 0, false, {
         fileName: "app/components/Project.jsx",
-        lineNumber: 49,
-        columnNumber: 11
+        lineNumber: 54,
+        columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/Project.jsx",
-      lineNumber: 44,
-      columnNumber: 9
+      lineNumber: 49,
+      columnNumber: 21
     }, this) }, void 0, false, {
       fileName: "app/components/Project.jsx",
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 7
     }, this)
   ] }, index, true, {
     fileName: "app/components/Project.jsx",
-    lineNumber: 25,
+    lineNumber: 26,
     columnNumber: 48
   }, this));
 };
@@ -576,7 +592,7 @@ var data_default = {
       year: 2023,
       description: "This chatbot helps merchants easily top up their account balance using WhatsApp. They can use the balance to assist users in paying electricity bills, fiber optic bills, and other household transactions. The chatbot automatically responds to WhatsApp messages, making it convenient for merchants without the need for a separate app.",
       techStacks: "NodeJs, DigitalOcean, Whatsapp Webhook",
-      url: ""
+      url: "/project/wa-chatbot"
     },
     {
       name: "Amazon Clone",
@@ -616,7 +632,7 @@ var data_default = {
   closingStatement: "I\u2019m available for <strong>Part-Time</strong> and <strong>Freelance work</strong>."
 };
 
-// app/root.jsx
+// app/routes/_index.jsx
 var import_jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
 if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   console.warn("remix:hmr: React Fast Refresh only works when the Remix compiler is running in development mode.");
@@ -624,7 +640,7 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   prevRefreshReg = window.$RefreshReg$;
   prevRefreshSig = window.$RefreshSig$;
   window.$RefreshReg$ = (type, id) => {
-    window.$RefreshRuntime$.register(type, '"app/root.jsx"' + id);
+    window.$RefreshRuntime$.register(type, '"app/routes/_index.jsx"' + id);
   };
   window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;
 }
@@ -634,23 +650,24 @@ var _s = $RefreshSig$();
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
-    "app/root.jsx"
+    "app/routes/_index.jsx"
   );
+  import.meta.hot.lastModified = "1700384000600.4016";
 }
-function App() {
+function Root() {
   _s();
-  const [selectedNav, setSelectedNav] = (0, import_react.useState)("home");
-  const homeRef = (0, import_react.useRef)(null);
-  const projectsRef = (0, import_react.useRef)(null);
-  const articlesRef = (0, import_react.useRef)(null);
-  const contactRef = (0, import_react.useRef)(null);
+  const [selectedNav, setSelectedNav] = (0, import_react2.useState)("home");
+  const homeRef = (0, import_react2.useRef)(null);
+  const projectsRef = (0, import_react2.useRef)(null);
+  const articlesRef = (0, import_react2.useRef)(null);
+  const contactRef = (0, import_react2.useRef)(null);
   const onChangeNav = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
       behavior: "smooth"
     });
   };
-  (0, import_react.useEffect)(() => {
+  (0, import_react2.useEffect)(() => {
     const options = {
       root: null,
       rootMargin: "0px",
@@ -691,133 +708,71 @@ function App() {
       }
     };
   }, [selectedNav]);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("html", { className: "scroll-smooth", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("head", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("title", { children: "Muhammad Dwiky Cahyo Wicaksono Personal Website" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 90,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "icon", href: "data:image/x-icon;base64,AA" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 91,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 92,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 94,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("script", { src: "https://cdn.tailwindcss.com" }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 96,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Meta, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 97,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Links, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 98,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, true, {
-      fileName: "app/root.jsx",
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "p-7 sticky top-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Navbar_default, { selectedNav, onChangeNav }, void 0, false, {
+      fileName: "app/routes/_index.jsx",
+      lineNumber: 90,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "app/routes/_index.jsx",
       lineNumber: 89,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("body", { className: "flex flex-col h-screen relative overflow-y-auto", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "p-7 sticky top-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Navbar_default, { selectedNav, onChangeNav }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 115,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "container", className: "flex-1 overflow-y-auto", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: homeRef, id: "home", className: "ml-36 w-3/4 h-full flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Home_default, { data: data_default }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 94,
         columnNumber: 11
       }, this) }, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 114,
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 93,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { id: "container", className: "flex-1 overflow-y-auto", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: homeRef, id: "home", className: "ml-36 w-3/4 h-full flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Home_default, { data: data_default }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 120,
-          columnNumber: 13
-        }, this) }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 118,
-          columnNumber: 11
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: projectsRef, id: "projects", className: "my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Project_default, { data: data_default }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 123,
-          columnNumber: 13
-        }, this) }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 122,
-          columnNumber: 11
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: articlesRef, id: "articles", className: "my-20 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Article_default, { data: data_default }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 126,
-          columnNumber: 13
-        }, this) }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 125,
-          columnNumber: 11
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: contactRef, id: "contact", className: "mt-20 bg-black text-white item-center flex flex-col items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Contact_default, { data: data_default }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 130,
-          columnNumber: 13
-        }, this) }, void 0, false, {
-          fileName: "app/root.jsx",
-          lineNumber: 128,
-          columnNumber: 11
-        }, this)
-      ] }, void 0, true, {
-        fileName: "app/root.jsx",
-        lineNumber: 117,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: projectsRef, id: "projects", className: "my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Project_default, { data: data_default }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 97,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 96,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Outlet, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 133,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: articlesRef, id: "articles", className: "my-20 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Article_default, { data: data_default }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 100,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 99,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Scripts, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 134,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(LiveReload, {}, void 0, false, {
-        fileName: "app/root.jsx",
-        lineNumber: 135,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { ref: contactRef, id: "contact", className: "mt-20 bg-black text-white item-center flex flex-col items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Contact_default, { data: data_default }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 103,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "app/routes/_index.jsx",
+        lineNumber: 102,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
-      fileName: "app/root.jsx",
-      lineNumber: 100,
+      fileName: "app/routes/_index.jsx",
+      lineNumber: 92,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
-    fileName: "app/root.jsx",
+    fileName: "app/routes/_index.jsx",
     lineNumber: 88,
     columnNumber: 10
   }, this);
 }
-_s(App, "VnAhIHIGk7FZ75CLMVt+/EZZXt4=");
-_c6 = App;
+_s(Root, "VnAhIHIGk7FZ75CLMVt+/EZZXt4=");
+_c6 = Root;
 var _c6;
-$RefreshReg$(_c6, "App");
+$RefreshReg$(_c6, "Root");
 window.$RefreshReg$ = prevRefreshReg;
 window.$RefreshSig$ = prevRefreshSig;
 export {
-  App as default
+  Root as default
 };
-//# sourceMappingURL=/build/root-ORXZY2SA.js.map
+//# sourceMappingURL=/build/routes/_index-MBUIGRFJ.js.map
