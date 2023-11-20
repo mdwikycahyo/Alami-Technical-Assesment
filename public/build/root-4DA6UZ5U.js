@@ -4,13 +4,13 @@ import {
   Meta,
   Outlet,
   Scripts
-} from "/build/_shared/chunk-64UX4JBJ.js";
+} from "/build/_shared/chunk-SGZ363BU.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-X6MWOLIK.js";
+} from "/build/_shared/chunk-GBBYQ36U.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import "/build/_shared/chunk-BOXFZXVX.js";
 import {
@@ -60,19 +60,19 @@ function App() {
         lineNumber: 28,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("script", { src: "https://cdn.tailwindcss.com" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("link", { href: "/dist/output.css", rel: "stylesheet" }, void 0, false, {
         fileName: "app/root.jsx",
         lineNumber: 30,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Meta, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Links, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
@@ -83,22 +83,22 @@ function App() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("body", { className: "flex flex-col h-screen relative overflow-y-auto", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Outlet, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Scripts, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(LiveReload, {}, void 0, false, {
         fileName: "app/root.jsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.jsx",
-      lineNumber: 34,
+      lineNumber: 35,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
@@ -115,4 +115,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   App as default
 };
-//# sourceMappingURL=/build/root-3UJ6DZJO.js.map
+//# sourceMappingURL=/build/root-4DA6UZ5U.js.map

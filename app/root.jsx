@@ -14,7 +14,8 @@ export default function App() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         />
-        <script src="https://cdn.tailwindcss.com" />
+        <link href="/dist/output.css" rel="stylesheet"></link>
+        {/* <script src="https://cdn.tailwindcss.com" /> */}
         <Meta />
         <Links />
       </head>

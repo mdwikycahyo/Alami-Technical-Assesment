@@ -1,12 +1,12 @@
 import {
   Link
-} from "/build/_shared/chunk-64UX4JBJ.js";
+} from "/build/_shared/chunk-SGZ363BU.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-X6MWOLIK.js";
+} from "/build/_shared/chunk-GBBYQ36U.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import {
   require_react
@@ -37,7 +37,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Navbar.jsx"
   );
-  import.meta.hot.lastModified = "1700376965955.043";
+  import.meta.hot.lastModified = "1700389450829.9097";
 }
 var Navbar = (props) => {
   const {
@@ -145,7 +145,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Home.jsx"
   );
-  import.meta.hot.lastModified = "1700377582298.9326";
+  import.meta.hot.lastModified = "1700389450829.7996";
 }
 var Home = (props) => {
   const {
@@ -221,7 +221,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Project.jsx"
   );
-  import.meta.hot.lastModified = "1700386121832.5579";
+  import.meta.hot.lastModified = "1700389450830.0066";
 }
 var Project = (props) => {
   const {
@@ -354,7 +354,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Article.jsx"
   );
-  import.meta.hot.lastModified = "1700378247467.7869";
+  import.meta.hot.lastModified = "1700389450829.5789";
 }
 var Article = (props) => {
   const {
@@ -462,7 +462,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Contact.jsx"
   );
-  import.meta.hot.lastModified = "1700377966402.061";
+  import.meta.hot.lastModified = "1700389450829.687";
 }
 var Contact = (props) => {
   const {
@@ -652,7 +652,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/_index.jsx"
   );
-  import.meta.hot.lastModified = "1700384000600.4016";
+  import.meta.hot.lastModified = "1700389450830.2808";
 }
 function Root() {
   _s();
@@ -775,4 +775,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Root as default
 };
-//# sourceMappingURL=/build/routes/_index-MBUIGRFJ.js.map
+//# sourceMappingURL=/build/routes/_index-6JNXTRQA.js.map

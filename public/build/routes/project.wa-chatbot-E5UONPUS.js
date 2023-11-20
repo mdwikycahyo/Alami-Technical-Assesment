@@ -1,12 +1,12 @@
 import {
   Link
-} from "/build/_shared/chunk-64UX4JBJ.js";
+} from "/build/_shared/chunk-SGZ363BU.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-X6MWOLIK.js";
+} from "/build/_shared/chunk-GBBYQ36U.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import "/build/_shared/chunk-BOXFZXVX.js";
 import {
@@ -38,7 +38,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/project.wa-chatbot.jsx"
   );
-  import.meta.hot.lastModified = "1700388110933.7861";
+  import.meta.hot.lastModified = "1700389450830.385";
 }
 function WAChatbot() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { id: "container", className: "flex-1 overflow-y-auto my-20", children: [
@@ -150,4 +150,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   WAChatbot as default
 };
-//# sourceMappingURL=/build/routes/project.wa-chatbot-QSCWW7CK.js.map
+//# sourceMappingURL=/build/routes/project.wa-chatbot-E5UONPUS.js.map
