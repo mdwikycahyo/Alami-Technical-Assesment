@@ -1,6 +1,5 @@
-// import Link from "next/link";
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 interface ProjectProps {
   data: {
@@ -15,7 +14,6 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ data }) => {
-
   return data.projects.map((project, index) => (
     <div key={index} className="flex justify-between my-10">
       <div className="w-10/12">
@@ -37,15 +35,14 @@ const Project: React.FC<ProjectProps> = ({ data }) => {
       </div>
       <div className="w-1/4 flex items-center justify-center">
         {project.name === "WhatsApp Chatbot" ? (
-          <a
+          <Link
             className="flex items-center justify-center cursor-pointer hover:font-bold"
-            href="/project/wa-chatbot"
+            to="/project/wa-chatbot"
           >
-            
             <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
             <p className="-ml-[25px] mr-2 font-mono">View Details</p>
             <i className="bi bi-arrow-right text-yellow-500 text-3xl" />
-          </a>
+          </Link>
         ) : (
           <div
             className="flex items-center justify-center cursor-pointer hover:font-bold"

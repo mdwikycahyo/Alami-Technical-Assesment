@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import sistemDesign from "../../../assets/wa-chatbot-system-design.png";
 
 const WAChatbot: React.FC = () => {
@@ -6,14 +7,14 @@ const WAChatbot: React.FC = () => {
     <>
       <div id="container" className="flex-1 overflow-y-auto my-20">
         <div className="w-1/4 mb-10 flex items-center justify-center">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center justify-center cursor-pointer hover:font-bold"
           >
             <i className="bi bi-arrow-left text-yellow-500 text-3xl" />
             <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
             <p className="-ml-[25px] mr-2 font-mono">Back to Home</p>
-          </a>
+          </Link>
         </div>
         <div id="project-detail" className="mx-36">
           <p className="leading-10 font-[Helvetica Neue] font-normal antialiased text-xl">
@@ -56,14 +57,14 @@ const WAChatbot: React.FC = () => {
             See the chatbot in operation by viewing the video clip below.
           </p>
           <div className="flex items-center justify-center flex-col my-10">
-            <a
-              href="https://youtube.com/shorts/GckBGch0dOs"
+            <Link
+              to="https://youtube.com/shorts/GckBGch0dOs"
               className="text-lg font-extralight m-auto underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Watch Chatbot Demo on YouTube
-            </a>
+            </Link>
           </div>
         </div>
       </div>
