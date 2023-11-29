@@ -26,7 +26,7 @@ const Root: React.FC = () => {
     const getThreshold = () => {
       // You can customize these values based on your design and preferences
       const desktopThreshold = 0.5;
-      const mobileThreshold = 0.7;
+      const mobileThreshold = 0.2;
 
       // You might need to adjust the width condition based on your specific breakpoints
       return window.innerWidth > 768 ? desktopThreshold : mobileThreshold;

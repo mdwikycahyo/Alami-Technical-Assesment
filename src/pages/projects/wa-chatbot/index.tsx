@@ -6,17 +6,17 @@ const WAChatbot: React.FC = () => {
   return (
     <>
       <div id="container" className="flex-1 overflow-y-auto my-20">
-        <div className="w-1/4 mb-10 flex items-center justify-center">
+        <div className="md:w-1/4 mb-10 flex md:items-center md:justify-center">
           <Link
             to="/"
             className="flex items-center justify-center cursor-pointer hover:font-bold"
           >
             <i className="bi bi-arrow-left text-yellow-500 text-3xl" />
-            <div className="bg-[#D9D9D9] rounded-full w-[50px] h-[50px]" />
+            <div className="bg-[#D9D9D9] rounded-full w-[40px] h-[40px] md:w-[50px] md:h-[50px]" />
             <p className="-ml-[25px] mr-2 font-mono">Back to Home</p>
           </Link>
         </div>
-        <div id="project-detail" className="mx-36">
+        <div id="project-detail" className="mx-10 md:mx-36">
           <p className="leading-10 font-[Helvetica Neue] font-normal antialiased text-xl">
             Imagine being able to pay your bills without the need for a separate
             app, saving your phone's storage space. Users can handle the entire
