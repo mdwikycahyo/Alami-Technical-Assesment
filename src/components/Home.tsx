@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 interface HomeProps {
@@ -13,11 +12,11 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ data }) => {
   return (
     <div>
-      <h1 className="text-6xl font-bold leading-normal font-mono">
+      <h1 className="text-4xl md:text-6xl font-bold leading-normal font-mono">
         Hi, I'm {data.username}!
       </h1>
       <p
-        className="leading-10 text-xl"
+        className="md:leading-10 text-lg md:text-xl"
         dangerouslySetInnerHTML={{ __html: data.summary }}
       />
       <div className="mt-4">

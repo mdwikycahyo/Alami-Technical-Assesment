@@ -23,10 +23,19 @@ const Root: React.FC = () => {
   };
 
   useEffect(() => {
+    const getThreshold = () => {
+      // You can customize these values based on your design and preferences
+      const desktopThreshold = 0.5;
+      const mobileThreshold = 0.7;
+
+      // You might need to adjust the width condition based on your specific breakpoints
+      return window.innerWidth > 768 ? desktopThreshold : mobileThreshold;
+    };
+
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: getThreshold(),
     };
 
     const callback: IntersectionObserverCallback = (entries) => {
@@ -38,6 +47,7 @@ const Root: React.FC = () => {
     };
 
     const observer = new IntersectionObserver(callback, options);
+    // console.log(selectedNav);
 
     if (homeRef.current) {
       observer.observe(homeRef.current);
@@ -69,33 +79,33 @@ const Root: React.FC = () => {
   }, [selectedNav]);
 
   return (
-      <div className="flex flex-col h-screen relative overflow-y-auto">
-        <div className="p-7 sticky top-0">
-          <Navbar selectedNav={selectedNav} onChangeNav={onChangeNav} />
+    <div className="flex flex-col h-screen relative overflow-y-auto">
+      <div className="p-3 mt-5 md:m-0 md:p-7 sticky top-0">
+        <Navbar selectedNav={selectedNav} onChangeNav={onChangeNav} />
+      </div>
+      <div id="container" className="flex-1 overflow-y-auto">
+        <div
+          ref={homeRef}
+          id="home"
+          className="mx-8 md:ml-36 md:w-3/4 h-full flex items-center"
+        >
+          <Home data={data} />
         </div>
-        <div id="container" className="flex-1 overflow-y-auto">
-          <div
-            ref={homeRef}
-            id="home"
-            className="ml-36 w-3/4 h-full flex items-center"
-          >
-            <Home data={data} />
-          </div>
-          <div ref={projectsRef} id="projects" className="my-20">
-            <Project data={data} />
-          </div>
-          <div ref={articlesRef} id="articles" className="my-20 ">
-            <Article data={data} />
-          </div>
-          <div
-            ref={contactRef}
-            id="contact"
-            className="mt-20 bg-black text-white item-center flex flex-col items-center"
-          >
-            <Contact data={data} />
-          </div>
+        <div ref={projectsRef} id="projects" className="my-20">
+          <Project data={data} />
+        </div>
+        <div ref={articlesRef} id="articles" className="my-20 ">
+          <Article data={data} />
+        </div>
+        <div
+          ref={contactRef}
+          id="contact"
+          className="mt-20 bg-black text-white item-center flex flex-col items-center"
+        >
+          <Contact data={data} />
         </div>
       </div>
+    </div>
   );
 };
 
